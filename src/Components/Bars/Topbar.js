@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import Fade from 'react-reveal/Fade';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
+
 import SideBar from "./Sidebar";
 
 const Header = styled.header`
@@ -15,7 +16,7 @@ const Header = styled.header`
     z-index: 5000;
     align-items: center;
     justify-content: space-between;
-    background: rgb(20,20,30);
+    background: #222640 !important;
     border-bottom: 1px solid white;
     height: 74px;
     img {
@@ -88,33 +89,38 @@ const Topbar = () => {
         clearAllBodyScrollLocks();
     };
 
-    
 
     return (<React.Fragment>
         <Header ref={topbarRef}>
             <div className="row w-100 mx-0">
                 <div className="col-4 col-md-3 d-flex justify-content-md-center px-3">
                     <a href="/">
-                        <img className="image" height="30px" draggable="false" width="auto" src={require('../../images/logomain.png').default} alt="InCTF-logo" />
+                        <img className="image" height="30px" draggable="false" width="auto" src={require('../../images/logomain.png').default} alt="InCTF logo" />
                     </a>
                 </div>
                 <div className="col-8 d-none d-md-flex justify-content-md-end align-items-center">
                     <nav>
-                        {/*<Fade delay={0}>
-                            <a className="newone" href="/about">About</a>
-                        </Fade>*/}
                         <Fade delay={0}>
                             <a className="newone" href="/">Home</a>
+                        </Fade>
+                        <Fade delay={100}>
+                            <a className="newone" href="/about">About</a>
                         </Fade>
                         <Fade delay={200}>
                             <a className="newone" href="/trainings">Training</a>
                         </Fade>
-                       {/* <Fade delay={450}>
+                        <Fade delay={300}>
+                            <a className="newone" href="/trainings">Speaker</a>
+                        </Fade>
+                        <Fade delay={400}>
+                            <a className="newone" href="/">Schedule</a>
+                        </Fade>
+                        <Fade delay={500}>
                             <a className="newone" href="/">Sponsors</a>
                         </Fade>
-                        <Fade delay={550}>
+                        <Fade delay={600}>
                             <a className="newone" href="/">Promote</a>
-                    </Fade>*/}
+                        </Fade>
                     </nav>
                 </div>
                 <div className="col-8 d-flex d-md-none align-items-center justify-content-end px-2">
@@ -124,14 +130,14 @@ const Topbar = () => {
                 </div>
                 {/*<div className="col-3 d-none d-md-flex align-items-center">
                     {/*<Fade left>*/}
-                    {/*    <a*/}
-                    {/*       className="register-button" target="_blank" rel="noreferrer nofollow"*/}
-                    {/*       href="https://docs.google.com/forms/d/e/1FAIpQLSeiITkqpmhPRHWQspiLt27hDV2nFlwW9QoyzyFZVjM5YmSqwg/viewform"*/}
-                    {/*    >*/}
-                    {/*        Register*/}
-                    {/*    </a>*/}
-                    {/*</Fade>*/}
-                    {/*socialMedia.map((s, index) =>
+                {/*    <a*/}
+                {/*       className="register-button" target="_blank" rel="noreferrer nofollow"*/}
+                {/*       href="https://docs.google.com/forms/d/e/1FAIpQLSeiITkqpmhPRHWQspiLt27hDV2nFlwW9QoyzyFZVjM5YmSqwg/viewform"*/}
+                {/*    >*/}
+                {/*        Register*/}
+                {/*    </a>*/}
+                {/*</Fade>*/}
+                {/*socialMedia.map((s, index) =>
                         <Fade right delay={index*200}>
                             <a
                                 href={s.url}
@@ -147,7 +153,7 @@ const Topbar = () => {
                     </div>*/}
             </div>
         </Header>
-        {showMenu && <SideBar  onClose={onClose} />}
+        {showMenu && <SideBar onClose={onClose} />}
     </React.Fragment>);
 };
 
