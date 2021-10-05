@@ -62,9 +62,7 @@ const CoverWrap = styled.div`
         }
         margin-right: 5px;
     }
-    .alig{
-        text-align: right; 
-    } 
+   
 
 `
 
@@ -73,11 +71,11 @@ function Banner() {
         <React.Fragment>
         <CoverContainer>
             <CoverWrap>
-                <div className="container text-left px-2">
+                <div className="container  px-2">
                     <Fade left>
                         <img
                             className="mb-0  " alt="edition"
-                            style={{ maxHeight: '72px', alignItems: 'right', maxWidth: '65vw', width: 'auto' }}
+                            style={{ maxHeight: '72px',float: 'right',  maxWidth: '65vw', width: 'auto' }}
                             src={require('../../images/Bcover/edition.png').default}
                         />
                     </Fade>
@@ -97,7 +95,7 @@ function Banner() {
                                 </div>
                             </div>
                         </div>*/}<br/>
-                        <h3 className="bold">December 2021</h3>
+                            <iframe class="border-0" src="https://app.traboda.com/contest/inctf-21-lr/reg-frame?color=fff&amp;primary=F13F17&amp;primary_text=fff"></iframe>
                     </Fade>
                 </div>
             </CoverWrap>
