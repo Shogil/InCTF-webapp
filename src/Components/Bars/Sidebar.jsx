@@ -20,8 +20,7 @@ const SideBarMenu = styled.div`
   right: 0;
   width: 100%;
   z-index: 9000;
-  background: linear-gradient(45deg, rgba(0,0,0,0.4) 0%, rgba(46,0,37,0.8) 37%, rgba(254,0,100,0.4) 51%, rgba(0,0,0,0.9) 100%),linear-gradient(51deg, rgba(82,55,15,1) 0%, rgba(71,83,0,1) 40%, rgba(0,50,124,1) 100%);
-  color: white;
+  background: radial-gradient(circle, rgba(134,88,71,1) 0%, rgba(7,15,124,0.87718837535014) 0%, rgba(18,11,68,1) 73%);
   box-shadow: -10px 0 8px rgba(0, 0, 0, 0.3);
   overflow-y: auto;
   max-width: 400px;
@@ -73,6 +72,7 @@ const SocialMediaLinks = styled.div`
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    background-color: firebrick;
     a {
        display: block;
        margin-right: 16px;
