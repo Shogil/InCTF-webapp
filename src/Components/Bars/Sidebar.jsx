@@ -126,17 +126,17 @@ const SideBar = ({ onClose, darkenOnSidebar }) => {
                     </div>
                     <SocialMediaLinks className="social-bar d-flex align-items-center justify-content-center px-2">
                         <Fade delay={50}>
-                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/manneri_bro">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/inctf.in">
                                 <i className="fab fa-instagram" />
                             </a>
                         </Fade>
                         <Fade delay={250}>
-                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/manneri_bro">
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/inctf">
                                 <i className="fab fa-twitter" />
                             </a>
                         </Fade>
                         <Fade delay={500}>
-                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/manneri_bro">
+                            <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/uZ2yahXyMd">
                                 <i className="fab fa-discord" />
                             </a>
                         </Fade>
