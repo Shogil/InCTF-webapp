@@ -13,10 +13,8 @@ const CoverContainer = styled.section`
 `;
 
 const CoverWrap = styled.div`
-    @media only screen and (max-width: 600px) {
-        .cf7_custom_style_1 {
-        padding-top: 60px;
-        }
+    @media (max-width: 575px){
+        margin-top: 75px;
     }
     {/*backdrop-filter: blur(1px) brightness(0.45);*/}
     width: 100%;
