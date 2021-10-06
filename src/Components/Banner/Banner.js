@@ -13,6 +13,11 @@ const CoverContainer = styled.section`
 `;
 
 const CoverWrap = styled.div`
+    @media only screen and (max-width: 600px) {
+        .cf7_custom_style_1 {
+        padding-top: 60px;
+        }
+    }
     {/*backdrop-filter: blur(1px) brightness(0.45);*/}
     width: 100%;
     min-height: 100vh;
@@ -42,7 +47,10 @@ const CoverWrap = styled.div`
        }
     }
     p {
-      color: #BBB;
+        font-size: 19px;
+        color: #cbc5c5;
+        
+        padding-right: 50px;
       span {
         font-weight: 600;
         color: #fd7e14;
@@ -74,7 +82,7 @@ function Banner() {
         <CoverContainer>
             <CoverWrap>
                 <div className="container  px-2">
-                    <Fade left>
+                    <Fade right>
                         <img
                             className="mb-0  " alt="edition"
                             style={{ maxHeight: '90px',float: 'right',  maxWidth: 'auto', width: 'auto' }}
@@ -83,6 +91,7 @@ function Banner() {
                     </Fade>
                     <Fade right>
                         <h2>INDIA'S FLAGSHIP CYBER SECURITY CONTEST AND CONFERENCE SEP TO DEC - 2021 </h2>
+                        <p>InCTF  India's Premier Hacking & Cyber Security contest organized by team bi0s, India's No.1 ranked CTF Team.Participate in this learn & hack CTF contest, win exciting prizes & kick-start your cyber-security career.</p>
                         {/*<div className="d-flex w-100 justify-content-center mt-3 align-content-center">
                             <div className="d-flex w-50 justify-content-end text-right border-right mr-3 pr-3 pl-2">
                                 <div>
@@ -96,7 +105,7 @@ function Banner() {
                                     <h3 className="font-weight-bold">April 9-11</h3>
                                 </div>
                             </div>
-                        </div>*/}<br/>
+                        </div>*/}
                     <div class="row">
                       <div class="col-md-6 mb-6 col-lg-6 p-3 p-md-3">
                           <iframe class="w-100 border-0" src="https://app.traboda.com/contest/inctf-21-lr/reg-frame?color=fff&amp;primary=F13F17&amp;primary_text=fff" data-gtm-yt-inspected-1_25="true"scrolling="no"></iframe>
