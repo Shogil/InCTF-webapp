@@ -15,6 +15,7 @@ const CoverContainer = styled.section`
 const CoverWrap = styled.div`
     @media (max-width: 575px){
         margin-top: 75px;
+        padding-top: 10px;
     }
     {/*backdrop-filter: blur(1px) brightness(0.45);*/}
     width: 100%;
