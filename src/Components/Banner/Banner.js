@@ -75,7 +75,7 @@ function Banner() {
                     <Fade left>
                         <img
                             className="mb-0  " alt="edition"
-                            style={{ maxHeight: '72px',float: 'right',  maxWidth: '65vw', width: 'auto' }}
+                            style={{ maxHeight: '90px',float: 'right',  maxWidth: '65vw', width: 'auto' }}
                             src={require('../../images/Bcover/edition.png').default}
                         />
                     </Fade>
@@ -95,8 +95,10 @@ function Banner() {
                                 </div>
                             </div>
                         </div>*/}<br/>
-                            <iframe class="border-0" src="https://app.traboda.com/contest/inctf-21-lr/reg-frame?color=fff&amp;primary=F13F17&amp;primary_text=fff"></iframe>
-                    </Fade>
+                      <div class="col-md-4 mb-6 col-lg-6 p-3 p-md-3"><iframe class="w-100 border-0" 
+                          src="https://app.traboda.com/contest/inctf-21-lr/reg-frame?color=fff&amp;primary=F13F17&amp;primary_text=fff"
+                                 data-gtm-yt-inspected-1_25="true"scrolling="no"></iframe>
+                      </div></Fade>
                 </div>
             </CoverWrap>
         </CoverContainer>
