@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "@emotion/styled";
 import Fade from 'react-reveal/Fade';
 
+
 const CoverContainer = styled.section`
     background-image: ${() => `url(${require('../../images/Bcover/banner.jpg').default})`};
     background-size:cover;
@@ -17,7 +18,8 @@ const CoverWrap = styled.div`
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    background:rgba(42, 45, 72, 0.8);
+    justify-content:left;
     img {
        width: 300px;
        max-width: 100%;
@@ -75,7 +77,7 @@ function Banner() {
                     <Fade left>
                         <img
                             className="mb-0  " alt="edition"
-                            style={{ maxHeight: '90px',float: 'right',  maxWidth: '65vw', width: 'auto' }}
+                            style={{ maxHeight: '90px',float: 'right',  maxWidth: 'auto', width: 'auto' }}
                             src={require('../../images/Bcover/edition.png').default}
                         />
                     </Fade>
@@ -95,10 +97,18 @@ function Banner() {
                                 </div>
                             </div>
                         </div>*/}<br/>
-                      <div class="col-md-4 mb-6 col-lg-6 p-3 p-md-3"><iframe class="w-100 border-0" 
-                          src="https://app.traboda.com/contest/inctf-21-lr/reg-frame?color=fff&amp;primary=F13F17&amp;primary_text=fff"
-                                 data-gtm-yt-inspected-1_25="true"scrolling="no"></iframe>
-                      </div></Fade>
+                    <div class="row">
+                      <div class="col-md-6 mb-6 col-lg-6 p-3 p-md-3">
+                          <iframe class="w-100 border-0" src="https://app.traboda.com/contest/inctf-21-lr/reg-frame?color=fff&amp;primary=F13F17&amp;primary_text=fff" data-gtm-yt-inspected-1_25="true"scrolling="no"></iframe>
+                      </div>
+                      </div>
+                      </Fade>
+                      <a href="https://www.youtube.com/embed/T8pEY4AR_Kg">
+                      <img
+                            className="mb-0  " alt="edition"
+                            style={{ maxHeight: '90px',float: 'left',  maxWidth: 'auto', width: 'auto' }}
+                            src={require('../../images/Bcover/Howtosignup.png').default}
+                        /></a>
                 </div>
             </CoverWrap>
         </CoverContainer>
