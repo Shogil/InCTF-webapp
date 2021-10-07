@@ -10,19 +10,21 @@ const CoverContainer = styled.section`
     color: white;
     position: relative;
     overflow: hidden;
+    background:rgba(42, 45, 72, 0.8);
+
 `;
 
 const CoverWrap = styled.div`
     @media (max-width: 575px){
-        margin-top: 75px;
+        margin-top: 80px;
         padding-top: 10px;
+        
     }
     {/*backdrop-filter: blur(1px) brightness(0.45);*/}
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:rgba(42, 45, 72, 0.8);
     justify-content:left;
     img {
        width: 300px;
