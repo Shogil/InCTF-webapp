@@ -10,16 +10,40 @@ const CoverContainer = styled.section`
 
 `;
 const CoverWrap = styled.div`
-        img {
-            position: relative;
-        }
-         img {
-            max-width: 100%;
-        }
+       
         img {
             overflow: hidden;
             border: 0;
             vertical-align: middle;
+            max-width: 100%;
+            position: relative;
+
+        }
+        h3 {
+            font-size: 25px;
+            font-family: bl;
+            color: #e84545;
+        }
+        
+        h4 {
+            font-size: 37px;
+            font-family: bb;
+            color: #2a2d48;
+            padding-top: 17px;
+            padding-bottom: 19px;
+            line-height: 49px;
+        }
+        
+        .about-txt h4 span {
+            color: #e84545;
+        }
+        
+        p {
+            font-size: 19px;
+            color: #666;
+            font-family: br;
+            padding-bottom: 46px;
+            padding-right: 40px;
         }
         .ai-place {
             -webkit-transform: rotate(-90deg);
@@ -116,44 +140,8 @@ const CoverWrap = styled.div`
             z-index: 0;
         }
         
-        h3 {
-            font-size: 25px;
-            font-family: bl;
-            color: #e84545;
-        }
+       
         
-        .about-txt h4 {
-            font-size: 37px;
-            font-family: bb;
-            color: #2a2d48;
-            padding-top: 17px;
-            padding-bottom: 19px;
-            line-height: 49px;
-        }
-        
-        .about-txt h4 span {
-            color: #e84545;
-        }
-        .card h5 {
-            font-size: 25px;
-            font-family: 'br';
-            font-weight: bold;
-            color: #e84545;
-        }
-        p {
-            font-size: 19px;
-            color: #666;
-            font-family: br;
-            padding-bottom: 46px;
-            padding-right: 40px;
-        }
-        .card p {
-            font-size: 15px;
-            font-weight: bold;
-            color: #222640;
-            font-family: br;
-            margin-bottom: 8px;
-        }
         
         .about-txt a {
             padding: 21px 25px;
@@ -200,7 +188,7 @@ function About() {
                 <div className="container  px-2">
                 <div className="row ">
                     <div class="col-lg-5 col-md-8 m-md-auto col-sm-9 m-sm-auto about-img ">
-                        <img className="mb-0  main-img" alt="about-img" style={{ maxHeight: 'auto',float: 'left',  maxWidth: 'auto', width: 'auto' }}
+                        <img className=" " alt="about-img" style={{ maxHeight: 'auto',float: 'left',  maxWidth: 'auto', width: 'auto' }}
                         src={require('../../images/About/about.jpg').default}/>
                         <h3 class="ai-place">ABOUT US</h3>
                         <a data-autoplay="true" data-vbtype="video" href="https://youtu.be/MICFZTmNOog  " class="play-btn venobox"><i class="fa fa-play" aria-hidden="true"></i></a>
