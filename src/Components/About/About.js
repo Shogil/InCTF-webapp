@@ -14,9 +14,10 @@ const CoverWrap = styled.div`
         .about-img {
             overflow: hidden;
             border: 0;
-            vertical-align: middle;
-            max-width: 100%;
             position: relative;
+            max-width: 100%;
+            height: 450px;                        
+            border-style: none;
 
         }
         .about-txt h3 {
@@ -48,14 +49,15 @@ const CoverWrap = styled.div`
             transform: rotate(-90deg);
             position: absolute;
             bottom: 185px;
-            left: -231px;
-            width: 451px;
+            left: -180px;
+            width: 469px;
             height: 80px;
             line-height: 80px;
             background: #e84545;
             text-align: center;
             font-size: 36px;
             color: white;
+            box-sizing: border-box;
         }
         
         .ai-place:hover {
