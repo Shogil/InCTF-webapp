@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "@emotion/styled";
+import Fade from 'react-reveal/Fade';
 
 
 const CoverContainer = styled.section`
@@ -182,14 +183,16 @@ function About() {
             <CoverContainer>
                 <CoverWrap>
                 <div className="container  px-2">
+                <Fade right>
                 <div className="row ">
                     <div class="col-lg-5 col-md-8 m-md-auto col-sm-9 m-sm-auto about-img ">
-                        <img className=" " alt="about-img" style={{ maxHeight: 'auto',float: 'left',  maxWidth: 'auto', width: 'auto' }}
+                        <img className=" " alt="about-img" 
                         src={require('../../images/About/about.jpg').default}/>
                         <h3 class="ai-place">ABOUT US</h3>
                         <a data-autoplay="true" data-vbtype="video" href="https://youtu.be/MICFZTmNOog  " class="play-btn venobox"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                     </div>
+                    
                     <div class="col-lg-7 about-txt">
                         <h3>Amrita InCTF</h3>
                         <h4>LEARN <span>|</span> HACK <span>| </span> WIN </h4>
@@ -197,7 +200,9 @@ function About() {
                         <a href="gallery.html">GALLERY</a>
                     
                     </div>
+                    
                 </div>
+                </Fade>
                 </div>
 
                 </CoverWrap>
