@@ -21,6 +21,11 @@ const CoverWrap = styled.div`
             border-style: none;
 
         }
+        img{
+            vertical-align:middle;
+            border-style:none;
+            height:450px; 
+        }
         .about-txt h3 {
             font-size: 25px;
             color: #e84545;
