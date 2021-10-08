@@ -16,7 +16,7 @@ const CoverContainer = styled.section`
 
 const CoverWrap = styled.div`
     @media (max-width: 575px){
-        margin-top: 80px;
+        margin-top: 70px;
         padding-top: 10px;
         
     }

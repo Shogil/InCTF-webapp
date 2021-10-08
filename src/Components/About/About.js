@@ -11,7 +11,7 @@ const CoverContainer = styled.section`
 `;
 const CoverWrap = styled.div`
        
-        img {
+        .about-img {
             overflow: hidden;
             border: 0;
             vertical-align: middle;
@@ -19,15 +19,13 @@ const CoverWrap = styled.div`
             position: relative;
 
         }
-        h3 {
+        .about-txt h3 {
             font-size: 25px;
-            font-family: bl;
             color: #e84545;
         }
         
-        h4 {
+        .about-txt h4 {
             font-size: 37px;
-            font-family: bb;
             color: #2a2d48;
             padding-top: 17px;
             padding-bottom: 19px;
@@ -39,9 +37,8 @@ const CoverWrap = styled.div`
         }
         
         p {
-            font-size: 19px;
+            font-size: 17px;
             color: #666;
-            font-family: br;
             padding-bottom: 46px;
             padding-right: 40px;
         }
@@ -57,7 +54,6 @@ const CoverWrap = styled.div`
             line-height: 80px;
             background: #e84545;
             text-align: center;
-            font-family: bb;
             font-size: 36px;
             color: white;
         }
@@ -148,7 +144,6 @@ const CoverWrap = styled.div`
             background: #e84545;
             border-radius: 50px;
             font-size: 19px;
-            font-family: bb;
             color: white;
             text-transform: uppercase;
             -webkit-transition: all linear .3s;
@@ -167,7 +162,6 @@ const CoverWrap = styled.div`
         
         h5 {
             font-size: 27px;
-            font-family: pr;
             color: #666;
         }
         
