@@ -6,11 +6,20 @@ const CoverContainer = styled.section`
     padding: 90px 0;
     position: relative;
     background: #fafafa;
+    
 
 `;
 const CoverWrap = styled.div`
-        .main-img {
+        img {
             position: relative;
+        }
+         img {
+            max-width: 100%;
+        }
+        img {
+            overflow: hidden;
+            border: 0;
+            vertical-align: middle;
         }
         .ai-place {
             -webkit-transform: rotate(-90deg);
@@ -28,10 +37,11 @@ const CoverWrap = styled.div`
             font-size: 36px;
             color: white;
         }
-
+        
         .ai-place:hover {
             color: white;
         }
+        
         @-webkit-keyframes pulse-border {
             0% {
                 -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -59,6 +69,7 @@ const CoverWrap = styled.div`
                 opacity: 0;
             }
         }
+        
         .play-btn {
             position: absolute;
             top: 40%;
@@ -104,11 +115,46 @@ const CoverWrap = styled.div`
             transition: all linear .3s;
             z-index: 0;
         }
-        .about-txt h3 {
+        
+        h3 {
             font-size: 25px;
             font-family: bl;
             color: #e84545;
         }
+        
+        .about-txt h4 {
+            font-size: 37px;
+            font-family: bb;
+            color: #2a2d48;
+            padding-top: 17px;
+            padding-bottom: 19px;
+            line-height: 49px;
+        }
+        
+        .about-txt h4 span {
+            color: #e84545;
+        }
+        .card h5 {
+            font-size: 25px;
+            font-family: 'br';
+            font-weight: bold;
+            color: #e84545;
+        }
+        p {
+            font-size: 19px;
+            color: #666;
+            font-family: br;
+            padding-bottom: 46px;
+            padding-right: 40px;
+        }
+        .card p {
+            font-size: 15px;
+            font-weight: bold;
+            color: #222640;
+            font-family: br;
+            margin-bottom: 8px;
+        }
+        
         .about-txt a {
             padding: 21px 25px;
             background: #e84545;
@@ -121,23 +167,28 @@ const CoverWrap = styled.div`
             -o-transition: all linear .3s;
             transition: all linear .3s;
         }
-        .about-s span {
-            font-size: 19px;
-            color: #e84545;
-        }
-        .about-s {
-            padding-top: 70px;
-        }
         
-        .about-s h5 {
-            font-size: 27px;
-            font-family: pr;
-            color: #666;
-        }
         .about-txt a:hover {
             -webkit-box-shadow: 0px 4px 19px 0px #e84545;
             box-shadow: 0px 4px 19px 0px #e84545;
         }
+        
+        .about-s {
+            padding-top: 70px;
+        }
+        
+        h5 {
+            font-size: 27px;
+            font-family: pr;
+            color: #666;
+        }
+        
+        .about-s span {
+            font-size: 19px;
+            color: #e84545;
+        }
+        
+        
 
 `
 
@@ -146,7 +197,8 @@ function About() {
         <React.Fragment>
             <CoverContainer>
                 <CoverWrap>
-                <div className="row">
+                <div className="container  px-2">
+                <div className="row ">
                     <div class="col-lg-5 col-md-8 m-md-auto col-sm-9 m-sm-auto about-img ">
                         <img className="mb-0  main-img" alt="about-img" style={{ maxHeight: 'auto',float: 'left',  maxWidth: 'auto', width: 'auto' }}
                         src={require('../../images/About/about.jpg').default}/>
@@ -156,12 +208,14 @@ function About() {
                     </div>
                     <div class="col-lg-7 about-txt">
                         <h3>Amrita InCTF</h3>
-                        <h4>LEARN <span2>|</span2> HACK <span>| </span> WIN </h4>
+                        <h4>LEARN <span>|</span> HACK <span>| </span> WIN </h4>
                         <p>InCTF is a National level <b> Ethical Hacking</b> contest organized annually by Team bi0s in association with Amrita Vishwa Vidyapeetham and Amrita Centre for Cyber Security. The contest is exclusively for students enrolled in an Indian university and aimed at students who have <b> no prior exposure to computer security</b> and for the working professionals. Started in 2010 and so far over <b> 15,000 university students </b>across India from 22 states have taken part.</p>
                         <a href="gallery.html">GALLERY</a>
                     
                     </div>
                 </div>
+                </div>
+
                 </CoverWrap>
             </CoverContainer>
             
